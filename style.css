@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .headerContainer {
@@ -9,7 +12,7 @@ body {
 }
 
 .headerContainer:hover header {
-  height: 2vh;
+  height: 2.5vh;
 }
 
 header {
@@ -20,6 +23,26 @@ header {
   top: 0;
   background-color: #151313;
   transition: 0.25s;
+  font-size: 1.25vh;
+  color: #FFF;
+}
+
+.date {
+  position: absolute;
+  left: 2vh;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.date:hover, .time:hover {
+  cursor: pointer;
 }
 
 footer {
@@ -40,4 +63,8 @@ footer {
   transform: translate(0%, -50%);
   background-color: #383c4c;
   border-radius: 50%;
+}
+
+.expand:hover {
+  cursor: pointer;
 }
